@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Vite Template - React + TS(SWC)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[React 프로젝트 시작하기 w. Vite](https://www.heropy.dev/p/6iFzkB) 글을 통해서 완성할 수 있는 템플릿입니다.
+[Degit](https://github.com/Rich-Harris/degit) 명령으로 완성된 프로젝트 구조를 빠르게 복사해 바로 사용할 수 있습니다.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+# 현재 프로젝트(폴더)에 템플릿을 복사합니다.
+npx degit ParkYoungWoong/vite-template--react-ts .
+# 패키지를 설치합니다.
+npm i
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+새로운 폴더로 템플릿을 복사하려면 다음과 같이 Degit 명령 마지막에 폴더 이름을 추가할 수 있습니다.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+# 새로운 프로젝트(폴더)에 템플릿을 복사합니다.
+npx degit ParkYoungWoong/vite-template--react-ts new-project-folder-name
+# 패키지를 설치합니다.
+npm i
 ```
+
+Degit 명령으로 복사한 프로젝트는 기본적으로 Git 버전 관리 내역이 없습니다. 
+다음 명령으로 자신의 Git 버전 관리를 시작할 수 있습니다.
+
+```bash
+# Git 버전 관리를 시작합니다.
+git init
+```
+
+## 스택
+
+- React
+- TypeScript
+- ESLint
+- Prettier
+- Path Alias
