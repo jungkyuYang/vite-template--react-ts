@@ -14,7 +14,7 @@ npm i
 
 ```bash
 # 새로운 프로젝트(폴더)에 템플릿을 복사합니다.
-npx degit ParkYoungWoong/vite-template--react-ts new-project-folder-name
+npx degit ParkYoungWoong/vite-template--react-ts <NEW_PROJECT_NAME>
 # 패키지를 설치합니다.
 npm i
 ```

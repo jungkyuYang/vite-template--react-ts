@@ -1,3 +1,6 @@
+# env
+.env*
+
 # Logs
 logs
 *.log
@@ -13,7 +16,9 @@ dist-ssr
 *.local
 
 # Editor directories and files
-!.vscode/extensions.json
+# .vscode/settings.json 등 사용!
+# .vscode/* 
+# !.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
