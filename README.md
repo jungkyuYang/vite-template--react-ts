@@ -6,7 +6,7 @@
 
 ```bash
 # 현재 프로젝트(폴더)에 템플릿 복사
-npx degit ParkYoungWoong/vite-template--react-ts .
+npx degit jungkyuYang/vite-template--react-ts .
 # 패키지 설치
 npm i
 # 프로젝트 실행
